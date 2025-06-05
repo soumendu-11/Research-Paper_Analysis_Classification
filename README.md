@@ -39,7 +39,7 @@ Based on the exercise, we can clearly observe that fine-tuning enhanced the mode
 
 Hyperparameter tuning can also significantly improve model performance. During the fine-tuning phase, we recommend utilizing the LoRA (Low-Rank Adaptation) approach, as it is particularly effective for parameter-efficient training, requiring fewer computational resources. It's important to experiment with different hyperparameters to find the optimal configuration for the model. Key LoRA hyperparameters—such as r, target modules (I used q_lin), and alpha—play a crucial role in fine-tuning effectiveness.
 
-We must also carefully monitor for overfitting. If the model shows signs of overfitting, we can either add more training data (though this can be expensive) or reduce the value of r (in my case, I used r = 2 to lower computational costs). Additional techniques such as increasing dropout or raising the weight decay rate in optimizers like AdamW or SGD can also help mitigate overfitting.
+We must also carefully monitor for overfitting. If the model shows signs of overfitting, we can either add more training data (though this can be expensive) or reduce the value of r (in my case, I used r = 4 to lower computational costs). Additional techniques such as increasing dropout or raising the weight decay rate in optimizers like AdamW or SGD can also help mitigate overfitting.
 
 Another important hyperparameter is alpha, which influences the contribution of the adapter layers. It is generally recommended to set alpha to 1–2 times the value of r.
 
