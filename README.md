@@ -74,6 +74,7 @@ To optimize costs, it's important to profile the model’s inference time and ba
 Overall, this project is feasible and achievable with careful planning and execution. By following these steps, we can enhance the model's effectiveness and ensure it meets our business goals.
 
 Link: https://medium.com/@heyamit10/fine-tuning-bert-for-sentiment-analysis-a-practical-guide-f3d9c9cac236 
+
 Link: https://www.philschmid.de/fine-tune-llms-in-2024-with-trl 
 
 
