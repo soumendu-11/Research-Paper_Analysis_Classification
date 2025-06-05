@@ -35,7 +35,7 @@ A requirements.txt file is included with the necessary dependencies for this pro
 Comments have been added in the code to enhance understanding.
 
 ## Conclusion
-Based on the exercise, we can clearly observe that fine-tuning enhanced the model’s performance in terms of accuracy and F1 score, with improvements of 60% and 50%, respectively. Fortunately, we had a balanced dataset. Otherwise, we could have modified the loss function to assign higher weights to the minority class, thereby penalizing its misclassification more heavily.
+Based on the exercise, we can clearly observe that fine-tuning enhanced the model’s performance in terms of accuracy and F1 score, with improvements of ~ 44% and ~ 61%, respectively. Fortunately, we had a balanced dataset. Otherwise, we could have modified the loss function to assign higher weights to the minority class, thereby penalizing its misclassification more heavily.
 
 Hyperparameter tuning can also significantly improve model performance. During the fine-tuning phase, we recommend utilizing the LoRA (Low-Rank Adaptation) approach, as it is particularly effective for parameter-efficient training, requiring fewer computational resources. It's important to experiment with different hyperparameters to find the optimal configuration for the model. Key LoRA hyperparameters—such as r, target modules (I used q_lin), and alpha—play a crucial role in fine-tuning effectiveness.
 
