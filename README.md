@@ -51,5 +51,29 @@ Fine-tuning models like BERT requires thoughtful hyperparameter optimization. Ef
 
 I highly recommend testing the model’s performance with different hyperparameter settings, experimenting with various base models, and evaluating performance in a cost-effective manner.
 
+Deployment Strategy 
+Building a machine learning model is always incomplete unless it is deployed and tested with real-world data. In the section below, I discuss some aspects of model deployment.
+When it comes to deployment, I like FastAPI.  
+1. FastAPI 
+FastAPI handles requests asynchronously and offers the following advantages:
+FastAPI efficiently manages API endpoints with automatic data validation and asynchronous request handling.
+TorchServe serves the model efficiently, enabling scalable and production-ready deployment for PyTorch models.
+
+3. Hugging Face Inference API
+For quick and easy deployment, the Hugging Face Inference API is a lifesaver. 
+Upload your model to the Hugging Face Model Hub.
+Use their API to call the model.
+
+
+4. Real-World Considerations
+Latency: FastAPI with TorchServe offers faster performance for real-time predictions.
+Ease of Use: Hugging Face’s API is great for quick deployments but can become expensive with high traffic.
+Scalability: Containerizing your model with Docker and deploying it on Kubernetes is ideal for large-scale applications.
+Virtual Layerwise Learning Memory(VLLM): It is a high-performance, optimized inference and serving framework specifically designed for Large Language Models (LLMs). Developed to maximize throughput and minimize latency during inference, VLLM enables the efficient serving of large-scale models like GPT, OPT, LLaMA, and others. I've never used it.
+To optimize costs, it's important to profile the model’s inference time and batch requests whenever possible [1].
+Overall, this project is feasible and achievable with careful planning and execution. By following these steps, we can enhance the model's effectiveness and ensure it meets our business goals.
+
+Link: https://medium.com/@heyamit10/fine-tuning-bert-for-sentiment-analysis-a-practical-guide-f3d9c9cac236 
+Link: https://www.philschmid.de/fine-tune-llms-in-2024-with-trl 
 
 
