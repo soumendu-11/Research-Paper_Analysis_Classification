@@ -70,7 +70,7 @@ Latency: FastAPI with TorchServe offers faster performance for real-time predict
 Ease of Use: Hugging Face’s API is great for quick deployments but can become expensive with high traffic.
 Scalability: Containerizing your model with Docker and deploying it on Kubernetes is ideal for large-scale applications.
 Virtual Layerwise Learning Memory(VLLM): It is a high-performance, optimized inference and serving framework specifically designed for Large Language Models (LLMs). Developed to maximize throughput and minimize latency during inference, VLLM enables the efficient serving of large-scale models like GPT, OPT, LLaMA, and others. 
-To optimize costs, it's important to profile the model’s inference time and batch requests whenever possible [1,2].
+To optimize costs, it's important to profile the model’s inference time and batch requests whenever possible [1, 2].
 By following these steps, we can enhance the model's effectiveness and ensure it meets our business goals.
 
 ## References
