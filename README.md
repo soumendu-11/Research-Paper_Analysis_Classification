@@ -69,10 +69,11 @@ Use their API to call the model.
 Latency: FastAPI with TorchServe offers faster performance for real-time predictions.
 Ease of Use: Hugging Face’s API is great for quick deployments but can become expensive with high traffic.
 Scalability: Containerizing your model with Docker and deploying it on Kubernetes is ideal for large-scale applications.
-Virtual Layerwise Learning Memory(VLLM): It is a high-performance, optimized inference and serving framework specifically designed for Large Language Models (LLMs). Developed to maximize throughput and minimize latency during inference, VLLM enables the efficient serving of large-scale models like GPT, OPT, LLaMA, and others. I've never used it.
+Virtual Layerwise Learning Memory(VLLM): It is a high-performance, optimized inference and serving framework specifically designed for Large Language Models (LLMs). Developed to maximize throughput and minimize latency during inference, VLLM enables the efficient serving of large-scale models like GPT, OPT, LLaMA, and others. 
 To optimize costs, it's important to profile the model’s inference time and batch requests whenever possible [1].
-Overall, this project is feasible and achievable with careful planning and execution. By following these steps, we can enhance the model's effectiveness and ensure it meets our business goals.
+By following these steps, we can enhance the model's effectiveness and ensure it meets our business goals.
 
+## References
 Link: https://medium.com/@heyamit10/fine-tuning-bert-for-sentiment-analysis-a-practical-guide-f3d9c9cac236 
 
 Link: https://www.philschmid.de/fine-tune-llms-in-2024-with-trl 
